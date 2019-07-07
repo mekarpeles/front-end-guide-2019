@@ -1,0 +1,124 @@
+Front-end is a shit show.
+
+* Overview
+Fight me, none of this matters as much as hipsters think it
+should. You can waste weeks reading about each of these techs and
+trying them (only to learn they've been deprecated for months).
+
+Thanks to [[http://drewwinget.com][Drew Winget]] and [[https://helloarielliu.com/][Ariel Liu]] for their help in getting me up to speed.
+
+*Here's a map of everything to help you:*
+1. understand the different components of web development
+2. learn about latest hotness in 2019
+3. converge on a stack and get up and running
+
+* The Basics
+Your browser does a lot for you by default:
+
+** HTML (HyperText Markup Language)
+Browser-native language for specifying the content -- i.e. structure and semantics -- of a web document
+
+** CSS (Cascading Style Sheets)
+Browser-native method for defining the styles and positions of html elements
+
+** JavaScript
+Browser-native language (often referred to as "Vanilla" JS) allows web
+pages to be made dynamic and interactive.
+
+* Modernizations
+Having to work with teams to build complex, performant, reliable applications can require special tooling.
+
+** HTML: Templating Languages
+*** Mustache (deprecated)
+*** HandlebarsJS (deprecated)
+*** Underscore (deprecated)
+*** JSX (react)
+*** Hyperscript (cycle.js)
+
+** CSS: Pre-processors
+
+*** postcss
+*** jss
+*** less
+*** sass
+
+** JS
+*** Flavors
+Many derivative languages are available, having their own benefits,
+which don't run natively in a browser until they are compiled
+(i.e. "transpiled") down to Vanilla JS which works in the browser
+https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS
+**** TypeScript
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript
+**** Elm
+**** Elixir
+**** ClojureScript
+**** Dart
+**** CoffeeScript
+**** PureScript
+**** Scala.js
+**** Reason
+**** Haxe
+*** Libraries
+**** JQuery
+**** Axios (promises)
+**** Underscore (mostly replaced by ES6)
+**** SocketIO
+**** D3 & Three.js
+**** Slick
+**** libp2p
+*** Frameworks
+JavaScript Frameworks are systems for defining, wiring, and
+maintaining complex web application logic and user interfaces. Often
+this includes systems for defining components, their states, their
+interactions, and how data flows between them.
+**** React
+**** Vue
+**** Polymer
+**** Ember
+**** Knockout
+**** Riot
+**** Angular
+**** Backbone
+*** Testing (& Snapshots)
+**** jest
+**** enzyme
+**** jasmine (older)
+**** mocha (older)
+** Tooling
+TL;DR is you need Node.js for npm. And everything in npm is made in node.js
+*** Package Management
+**** npm (1st gen)
+npm manages node packages
+**** yarn
+Yarn is cached alternative to npm
+**** npx
+To replace npm and to compete with yarn? Who cares, it's a package
+manager... or: https://iamturns.com/yarn-vs-npm-2018/
+*** Transpiling
+If you're using a hipster language other than Vanilla JS, the
+transpiler (which is basically just babel, thank goodness, because
+there's too much fragmenting among js tooling) converts your code into
+Vanilla JS which will hopefully run in any browser:
+**** Babel
+*** Linting
+Enforce coding conventions as part of your continuous integration
+**** ESLint
+**** JSHint
+*** Build Systems
+Build systems minify, they transpile, they run linters, start servers,
+package for different environments, add browser-prefixes, (often with
+the help of other tools), etc
+**** Webpack
+**** Gulp (last gen)
+**** Grunt (last gen)
+**** Browserify (last gen)
+* A Popular Stack
+- React
+- TypeScript
+- Webpack
+- Postcss
+** Approach
+Find starter packs on github and look at their `webpack.config.js` and the scripts in their package.json, e.g.
+https://github.com/vikpe/react-webpack-typescript-starter
+https://github.com/jedmao/tsx-react-postcss-webpack
