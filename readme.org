@@ -29,12 +29,12 @@ pages to be made dynamic and interactive.
 Having to work with teams to build complex, performant, reliable applications can require special tooling.
 
 ** HTML: Templating Languages
+*** EJS
 *** Mustache (deprecated)
 *** HandlebarsJS (deprecated)
 *** Underscore (deprecated)
 *** JSX (react)
 *** Hyperscript (cycle.js)
-
 ** CSS: Pre-processors
 
 *** postcss
@@ -88,13 +88,16 @@ interactions, and how data flows between them.
 ** Tooling
 TL;DR is you need Node.js for npm. And everything in npm is made in node.js
 *** Package Management
-**** npm (1st gen)
-npm manages node packages
+**** npm
+npm is a node package manager
 **** yarn
 Yarn is cached alternative to npm
 **** npx
-To replace npm and to compete with yarn? Who cares, it's a package
-manager... or: https://iamturns.com/yarn-vs-npm-2018/
+https://stackoverflow.com/questions/50605219/difference-between-npx-and-npm
+"NPX is a tool to execute node.js packages. It doesn't matter whether
+you installed that package globally or locally. NPX will temporarily
+install it and run it. NPM also can run packages if you configure a
+package.json file and include it in the script section."
 *** Transpiling
 If you're using a hipster language other than Vanilla JS, the
 transpiler (which is basically just babel, thank goodness, because
